@@ -1,14 +1,17 @@
 {
-  "name": "shygon-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "shygon",
+  "description": "Vue UI components with configurable classes ready for BootstrapVue",
+  "version": "0.0.1",
+  "main": "dist/shygon.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-package": "vue-cli-service build --target lib --name shygon ./src/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "vee-validate": "^3.4.3",
     "vue": "^2.6.11"
   },
   "devDependencies": {
@@ -20,6 +23,11 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-template-compiler": "^2.6.11"
   },
+  "files": [
+    "dist/*",
+    "src/*",
+    "*.json"
+  ],
   "eslintConfig": {
     "root": true,
     "env": {
@@ -38,5 +46,25 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "keywords": [
+    "bootstrapvue",
+    "shygon",
+    "devtyping",
+    "bootstrap",
+    "vuejs"
+  ],
+  "author": "pp <phuongthephung@gmail.com>",
+  "contributors": [
+    {
+      "name": "Phuong Phung",
+      "email": "phuongthephung@gmail.com",
+      "url": "https://phuongphung.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DevTyping/shygon/issues"
+  },
+  "homepage": "https://github.com/DevTyping/shygon#readme"
 }
