@@ -1,13 +1,20 @@
 import { installFactory } from './utils/plugins'
 
-import FModal from './components/Modal'
-import FError from './components/Error'
+import SModal from './components/Modal'
+import SError from './components/Error'
 
-const components = installFactory({
+const NAME = 'shygon'
+
+const install = installFactory({
   components: {
-    FModal,
-    FError
+    SModal,
+    SError
   }
 })
 
-export default components
+const Shygon = {
+  install,
+  NAME
+}
+
+export default Shygon

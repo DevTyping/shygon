@@ -3,8 +3,8 @@ import Vue from 'vue'
 /**
  * Base Component
  *
- * @author pp<phuongpt47@fpt.com.vn>
- * @since 1.0.0
+ * @author pp<phuongthephung@gmail.com>
+ * @since 0.0.1
  */
 const Component = Vue.extend({
   props: {

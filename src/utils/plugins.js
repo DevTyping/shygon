@@ -12,7 +12,7 @@ export const checkMultipleVue = (() => {
     'You may need to set up an alias for Vue in your bundler config.'
   ].join('\n')
 
-  return (Vue) => {
+  return Vue => {
     if (!checkMultipleVueWarned && _Vue !== Vue && !isJSDOM) {
       // eslint-disable-next-line no-console
       console.warn(MULTIPLE_VUE_WARNING)
@@ -25,7 +25,7 @@ export const checkMultipleVue = (() => {
  * Install Factory
  */
 export const installFactory = ({ components } = {}) => {
-  const install = (Vue) => {
+  const install = Vue => {
     if (install.installed) {
       return
     }
